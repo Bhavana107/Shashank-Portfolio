@@ -1,166 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio - Cinematographer</title>
-    <meta name="description" content="Feature films, mood boards, and personal projects." />
-  </head>
-  <body>
-    <!-- Fixed Navigation -->
-    <nav class="navbar">
-      <div class="container">
-        <div class="nav-brand">SHASHANK L.</div>
-        <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
-        <div class="nav-links">
-          <a href="/">Home</a>
-          <a href="/about.html">About</a>
-          <a href="/portfolio.html" class="active">Portfolio</a>
-          <a href="/contact.html">Contact</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Cinematographer</title>
+  <meta name="description" content="Feature films, mood boards, and personal projects." />
+</head>
+
+<body>
+  <!-- Fixed Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">SHASHANK L.</div>
+      <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/portfolio.html" class="active">Portfolio</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-title">Selected Work</h1>
+      <p class="text-muted">Feature Films & Commercials</p>
+    </div>
+  </header>
+
+  <!-- 3D Carousel Section (Feature Films) -->
+  <!-- 3D Carousel Section (Feature Films) -->
+  <section class="portfolio-carousel-section">
+    <style>
+      .portfolio-carousel-section {
+        background: #000;
+        padding: 80px 0;
+        overflow: hidden;
+      }
+
+      .carousel-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        perspective: 1200px;
+      }
+
+      .carousel-track {
+        position: relative;
+        width: 900px;
+        height: 530px;
+      }
+
+      .carousel-item {
+        position: absolute;
+        width: 900px;
+        height: 530px;
+        border-radius: 24px;
+        overflow: hidden;
+        background: #111;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      }
+
+      /* VIDEO + IMAGE FULL FRAME */
+      .carousel-item iframe,
+      .carousel-item img,
+      .carousel-item video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: none;
+        display: block;
+      }
+
+      /* OVERLAY */
+      .carousel-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 40px;
+        background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.85),
+            rgba(0, 0, 0, 0.2),
+            transparent);
+        color: white;
+        z-index: 2;
+      }
+
+      .carousel-overlay h3 {
+        font-size: 42px;
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+
+      .carousel-overlay p {
+        font-size: 18px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #d4af37;
+      }
+    </style>
+
+    <div class="carousel-container">
+
+      <div class="carousel-track" id="carouselTrack">
+
+        <!-- RISHAB PANTH AD -->
+        <div class="carousel-item active">
+
+          <iframe src="https://www.youtube.com/embed/bpBG-5Fnqy8?mute=1"
+            title="Rishab pant" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+          </iframe>
+
+          <div class="carousel-overlay">
+            <h3>Star Sports</h3>
+            <p>Ad</p>
+          </div>
+        </div>
+
+        <!-- RCB KINGFISHER AD -->
+        <div class="carousel-item">
+
+  <iframe 
+    src="https://www.youtube.com/embed/JAfjHfARkO0"
+    title="RCB"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>
+
+  <div class="carousel-overlay">
+    <h3>Kingfisher</h3>
+    <p>Ad</p>
+  </div>
+
+</div>
+
+        <!-- KODAK AD -->
+        <div class="carousel-item">
+
+          <iframe src="https://www.youtube.com/embed/T8NqSDuFMIw?mute=1" title="Kodak ad" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen>
+          </iframe>
+
+          <div class="carousel-overlay">
+            <h3>Kodak</h3>
+            <p>AD</p>
+          </div>
+        </div>
+
+        <!-- NOTHING PHONE AD -->
+        <div class="carousel-item">
+
+          <iframe src="https://www.youtube.com/embed/Yy4atYEbIeY?mute=1" title="Nothing phone ad" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen>
+          </iframe>
+
+          <div class="carousel-overlay">
+            <h3>Nothing phone</h3>
+            <p>AD</p>
+          </div>
+        </div>
+
+        <!-- APRILIA RS 457 -->
+       <div class="carousel-item">
+
+  <iframe 
+    src="https://www.youtube.com/embed/-13SLpmzfF0"
+    title="Project 5"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>
+
+  <div class="carousel-overlay">
+    <h3>Aprilia RS457 </h3>
+    <p>Specs Trailer</p>
+  </div>
+
+</div>
+
+<!-- FASHION AD -->
+<div class="carousel-item">
+
+  <iframe 
+    src="https://www.youtube.com/embed/OOaXdwEYgP8"
+    title="Fashion Ad"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>
+
+  <div class="carousel-overlay">
+    <h3>Fashion</h3>
+    <p>AD</p>
+  </div>
+
+</div>
+
+<!-- NGO DOCUMENTARY -->
+<div class="carousel-item">
+
+  <iframe 
+    src="https://www.youtube.com/embed/a3OxWONSfNU"
+    title="NGO"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>
+
+  <div class="carousel-overlay">
+    <h3>NGO Documentary</h3>
+  </div>
+  <!--
+
+        <div class="carousel-item">
+          <img src="/shark.png" alt="Project 8" />
+          <div class="carousel-overlay">
+            <h3>Project 8</h3>
+            <p>Commercial</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="/tron.png" alt="Project 9" />
+          <div class="carousel-overlay">
+            <h3>Project 9</h3>
+            <p>Short Film</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="/hero_cinematic_1.png" alt="Project 10" />
+          <div class="carousel-overlay">
+            <h3>Project 10</h3>
+            <p>Short Film</p>
+          </div>
+        </div>
+      -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Flashcard Grids Section -->
+  <section class="flashcard-section">
+    <div class="container">
+
+      <!-- Row 1: 2 Columns -->
+      <div class="flashcard-row two-col">
+        <!-- Kodak Ad (6 cards) -->
+        <div class="flashcard-project">
+          <div class="flashcard-container" data-total="6">
+            <img class="flashcard active" src="/Portfolio frames/kodak/image.png" />
+            <img class="flashcard" src="/Portfolio frames/kodak/image copy 2.png" />
+            <img class="flashcard" src="/Portfolio frames/kodak/image copy 4.png" />
+            <img class="flashcard" src="/Portfolio frames/kodak/image copy 3.png" />
+            <img class="flashcard" src="/Portfolio frames/kodak/image copy.png" />
+          </div>
+          <div class="flashcard-info">
+            <h3>Kodak Ad Shoot</h3>
+            <p class="flashcard-counter">1 of 6</p>
+          </div>
+        </div>
+
+        <!-- Marathi Film (6 cards) -->
+        <div class="flashcard-project">
+          <div class="flashcard-container" data-total="6">
+            <img class="flashcard active" src="/Portfolio frames/M1.jpg" />
+            <img class="flashcard" src="/Portfolio frames/M2.jpg" />
+            <img class="flashcard" src="/Portfolio frames/M3.jpg" />
+            <img class="flashcard" src="/Portfolio frames/M4.jpg" />
+            <img class="flashcard" src="/Portfolio frames/M5.jpg" />
+            <img class="flashcard" src="/Portfolio frames/M6.jpg" />
+          </div>
+          <div class="flashcard-info">
+            <h3>Marathi Short Film</h3>
+            <p class="flashcard-counter">1 of 6</p>
+          </div>
         </div>
       </div>
-    </nav>
 
-    <!-- Page Header -->
-    <header class="page-header">
-      <div class="container">
-        <h1 class="page-title">Selected Work</h1>
-        <p class="text-muted">Feature Films & Commercials</p>
-      </div>
-    </header>
+      <!-- Row 2: 1 Column -->
+      <div class="flashcard-row full-width">
+        <!-- Animal NGO Documentary (15 cards) -->
+        <div class="flashcard-project">
+          <!-- Simplified to 5 placeholders for demo -->
+          <div class="flashcard-container" data-total="5">
+            <img class="flashcard active" src="/Portfolio frames/ngo/n2.png" />
+            <img class="flashcard" src="/Portfolio frames/ngo/n1.png" />
+            <img class="flashcard" src="/Portfolio frames/ngo/n3.png" />
+            <img class="flashcard" src="/Portfolio frames/ngo/n4.png" />
+            <img class="flashcard" src="/Portfolio frames/ngo/n9.png" />
+            <img class="flashcard" src="/Portfolio frames/ngo/n5.png" />
+            <img class="flashcard" src="/Portfolio frames/ngo/n6.png" />
+            <img class="flashcard" src="/Portfolio frames/ngo/n7.png" />
+            <img class="flashcard" src="/Portfolio frames/ngo/n8.png" />
+            <img class="flashcard" src="/Portfolio frames/ngo/n10.png" />
 
-    <!-- 3D Carousel Section (Feature Films) -->
-    <section class="portfolio-carousel-section">
-      <div class="carousel-container">
-        <div class="carousel-track" id="carouselTrack">
-          <!-- 10 Items as requested -->
-          <div class="carousel-item active"><img src="/hero_cinematic_1.png" alt="Film 1" /><div class="carousel-overlay"><h3>Neon Nights</h3><p>Feature Film</p></div></div>
-          <div class="carousel-item"><img src="/hero_cinematic_2.png" alt="Film 2" /><div class="carousel-overlay"><h3>The Shadow Protocol</h3><p>Feature Film</p></div></div>
-          <div class="carousel-item"><img src="/hero_cinematic_3.png" alt="Film 3" /><div class="carousel-overlay"><h3>Echoes</h3><p>Feature Film</p></div></div>
-          <div class="carousel-item"><img src="/hero1.png" alt="Film 4" /><div class="carousel-overlay"><h3>Project 4</h3><p>Feature Film</p></div></div>
-          <div class="carousel-item"><img src="/hero2.png" alt="Film 5" /><div class="carousel-overlay"><h3>Project 5</h3><p>Feature Film</p></div></div>
-          <div class="carousel-item"><img src="/bts.png" alt="Film 6" /><div class="carousel-overlay"><h3>Project 6</h3><p>Commercial</p></div></div>
-          <div class="carousel-item"><img src="/jet.png" alt="Film 7" /><div class="carousel-overlay"><h3>Project 7</h3><p>Commercial</p></div></div>
-          <div class="carousel-item"><img src="/shark.png" alt="Film 8" /><div class="carousel-overlay"><h3>Project 8</h3><p>Commercial</p></div></div>
-          <div class="carousel-item"><img src="/tron.png" alt="Film 9" /><div class="carousel-overlay"><h3>Project 9</h3><p>Short Film</p></div></div>
-          <div class="carousel-item"><img src="/hero_cinematic_1.png" alt="Film 10" /><div class="carousel-overlay"><h3>Project 10</h3><p>Short Film</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Flashcard Grids Section -->
-    <section class="flashcard-section">
-      <div class="container">
-        
-        <!-- Row 1: 2 Columns -->
-        <div class="flashcard-row two-col">
-          <!-- Kodak Ad (6 cards) -->
-          <div class="flashcard-project">
-            <div class="flashcard-container" data-total="6">
-              <img class="flashcard active" src="/hero_cinematic_1.png" />
-              <img class="flashcard" src="/hero_cinematic_2.png" />
-              <img class="flashcard" src="/hero_cinematic_3.png" />
-              <img class="flashcard" src="/hero1.png" />
-              <img class="flashcard" src="/hero2.png" />
-              <img class="flashcard" src="/bts.png" />
-            </div>
-            <div class="flashcard-info">
-              <h3>Kodak Ad Shoot</h3>
-              <p class="flashcard-counter">1 of 6</p>
-            </div>
           </div>
-          
-          <!-- Marathi Film (6 cards) -->
-          <div class="flashcard-project">
-            <div class="flashcard-container" data-total="6">
-              <img class="flashcard active" src="/Portfolio frames/M1.jpg" />
-              <img class="flashcard" src="/Portfolio frames/M2.jpg" />
-              <img class="flashcard" src="/Portfolio frames/M3.jpg" />
-              <img class="flashcard" src="/Portfolio frames/M4.jpg" />
-              <img class="flashcard" src="/Portfolio frames/M5.jpg" />
-              <img class="flashcard" src="/Portfolio frames/M6.jpg" />
-            </div>
-            <div class="flashcard-info">
-              <h3>Marathi Short Film</h3>
-              <p class="flashcard-counter">1 of 6</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Row 2: 1 Column -->
-        <div class="flashcard-row full-width">
-          <!-- Animal NGO Documentary (15 cards) -->
-          <div class="flashcard-project">
-            <!-- Simplified to 5 placeholders for demo -->
-            <div class="flashcard-container" data-total="5">
-              <img class="flashcard active" src="/shark.png" />
-              <img class="flashcard" src="/jet.png" />
-              <img class="flashcard" src="/tron.png" />
-              <img class="flashcard" src="/hero_cinematic_3.png" />
-              <img class="flashcard" src="/hero_cinematic_1.png" />
-            </div>
-            <div class="flashcard-info">
-              <h3>Animal NGO Documentary</h3>
-              <p class="flashcard-counter">1 of 15</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Row 3: 2 Columns -->
-        <div class="flashcard-row two-col">
-          <!-- Fashion Ad (5 cards) -->
-          <div class="flashcard-project">
-            <div class="flashcard-container" data-total="5">
-              <img class="flashcard active" src="/hero_cinematic_2.png" />
-              <img class="flashcard" src="/hero_cinematic_1.png" />
-              <img class="flashcard" src="/hero2.png" />
-              <img class="flashcard" src="/bts.png" />
-              <img class="flashcard" src="/tron.png" />
-            </div>
-            <div class="flashcard-info">
-              <h3>Fashion Ad Film</h3>
-              <p class="flashcard-counter">1 of 5</p>
-            </div>
-          </div>
-          
-          <!-- Sci-Fi iPhone (12 cards) -->
-          <div class="flashcard-project">
-            <!-- Simplified to 5 placeholders for demo -->
-            <div class="flashcard-container" data-total="8">
-              <img class="flashcard active" src="/Portfolio frames/scifi/Sci2.jpg" alt="Sci-Fi Frame" />
-              <img class="flashcard" src="/Portfolio frames/scifi/Sci1.jpg" />
-              <img class="flashcard" src="/Portfolio frames/scifi/Sci3.jpg" />
-              <img class="flashcard" src="/Portfolio frames/scifi/Sci4.jpg" />
-              <img class="flashcard" src="/Portfolio frames/scifi/Sci5.jpg" />
-              <img class="flashcard" src="/Portfolio frames/scifi/Sci6.jpg" />
-              <img class="flashcard" src="/Portfolio frames/scifi/Sci7.jpg" />
-              <img class="flashcard" src="/Portfolio frames/scifi/Sci8.jpg" />
-            </div>
-            <div class="flashcard-info">
-              <h3>Sci-Fi Film on iPhone</h3>
-              <p class="flashcard-counter">1 of 8</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="footer-content">
-          <a href="mailto:shashanklumburu@gmail.com" class="footer-email">shashanklumburu@gmail.com</a>
-          <div class="footer-social">
-            <a href="https://www.instagram.com/unexpected_unboxing?igsh=Z21yM2NsbmdxbjFm" target="_blank" aria-label="Instagram">IG</a>
-            <a href="https://www.linkedin.com/in/shashank-l-b4baa526a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn">IN</a>
+          <div class="flashcard-info">
+            <h3>Animal NGO Documentary</h3>
+            <p class="flashcard-counter">1 of 15</p>
           </div>
         </div>
       </div>
-    </footer>
 
-    <script type="module" src="/src/main.js"></script>
-    <script type="module" src="/src/carousel.js"></script>
-    <script type="module" src="/src/flashcards.js"></script>
-  </body>
+      <!-- Row 3: 2 Columns -->
+      <div class="flashcard-row two-col">
+        <!-- Fashion Ad (5 cards) -->
+        <div class="flashcard-project">
+          <div class="flashcard-container" data-total="5">
+            <img class="flashcard active" src="/Portfolio frames/fashion/f1.png" />
+            <img class="flashcard" src="/Portfolio frames/fashion/f2.png" />
+            <img class="flashcard" src="/Portfolio frames/fashion/f3.png" />
+            <img class="flashcard" src="/Portfolio frames/fashion/f4.png" />
+
+          </div>
+          <div class="flashcard-info">
+            <h3>Fashion Ad Film</h3>
+            <p class="flashcard-counter">1 of 5</p>
+          </div>
+        </div>
+
+        <!-- Sci-Fi iPhone (8 cards) -->
+        <div class="flashcard-project">
+          <!-- Simplified to 8 placeholders for demo -->
+          <div class="flashcard-container" data-total="8">
+            <img class="flashcard active" src="/Portfolio frames/scifi/Sci2.jpg" alt="Sci-Fi Frame" />
+            <img class="flashcard" src="/Portfolio frames/scifi/Sci1.jpg" />
+            <img class="flashcard" src="/Portfolio frames/scifi/Sci3.jpg" />
+            <img class="flashcard" src="/Portfolio frames/scifi/Sci4.jpg" />
+            <img class="flashcard" src="/Portfolio frames/scifi/Sci5.jpg" />
+            <img class="flashcard" src="/Portfolio frames/scifi/Sci6.jpg" />
+            <img class="flashcard" src="/Portfolio frames/scifi/Sci7.jpg" />
+            <img class="flashcard" src="/Portfolio frames/scifi/Sci8.jpg" />
+          </div>
+          <div class="flashcard-info">
+            <h3>Sci-Fi Film on iPhone</h3>
+            <p class="flashcard-counter">1 of 8</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <a href="mailto:shashanklumburu@gmail.com" class="footer-email">shashanklumburu@gmail.com</a>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/unexpected_unboxing?igsh=Z21yM2NsbmdxbjFm" target="_blank"
+            aria-label="Instagram">IG</a>
+          <a href="https://www.linkedin.com/in/shashank-l-b4baa526a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank" aria-label="LinkedIn">IN</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/carousel.js"></script>
+  <script type="module" src="/src/flashcards.js"></script>
+</body>
+
 </html>
